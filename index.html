@@ -84,16 +84,16 @@
   </div>
 </section>
 
-<!--.................modals.............  -->
+<!--.................POST modal.............  -->
 <div class="modal fade" id="addpostmodal">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header bg-primary">
         <h5 class="modal-title">Add Post</h5>
-      </div>
         <button class="close" data-dismiss="modal">
           <span>&times;</span>
         </button>
+      </div>
         <div class="modal-body">
           <form>
             <div class="form-group">
@@ -116,7 +116,8 @@
             </div>
             <div class="form-group">
               <label for="body">Body</label>
-              <textarea  class="form-control"rows="4"></textarea>
+              <!--name=ckeditor  -->
+              <textarea  class="form-control" name="editor1"></textarea>
             </div>
           </form>
         </div>
@@ -129,6 +130,71 @@
 </div>
 
 
+<!--.................category modal.............  -->
+<div class="modal fade" id="addcategorymodal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header bg-success">
+          <h5 class="modal-title">Add category</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="category">Category</label>
+              <input type="text" name="category" id="category" class="form-control">
+            </div>
+          </form>
+       </div>
+       <div class="modal-footer">
+         <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <button class="btn btn-success" data-dismiss="modal">Save Changes</button>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+<!--.................user modal.............  -->
+<div class="modal fade" id="addusermodal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header bg-warning">
+          <h5 class="modal-title">Add User</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="text" name="password" id="password" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="confirmpassword">ConfirmPassword</label>
+              <input type="text" name="confirmpassword" id="confirmpassword" class="form-control">
+            </div>
+          </form>
+       </div>
+       <div class="modal-footer">
+         <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <button class="btn btn-warning" data-dismiss="modal">Save Changes</button>
+       </div>
+    </div>
+  </div>
+</div>
+
 
 
   <script src="src/js/jquery.min.js"></script>
@@ -137,5 +203,12 @@
   <!-- smooth scrolling from navbar to the id element.....navbar-fixed.js......... -->
   <!-- jquery-plugin-fixed bootstrap4 nav-smooth-scroll navbar -->
   <script src="src/js/navbar-fixed.js"></script>
+
+  <!-- **************ckeditor....textarea..........*********** -->
+  <script type="text/javascript" src="./node_modules/ckeditor/ckeditor.js">
+  </script>
+  <script type="text/javascript" >
+    CKEDITOR.replace('editor1');
+  </script>
 </body>
 </html>
