@@ -22,9 +22,9 @@
     <div class="collapse navbar-collapse" id="navbarnav">
       <ul class="nav navbar-nav ">
         <li class="nav-item px-2"><a href="../index.html" class="nav-link">Dashboard<a/></li>
-        <li class="nav-item px-2"><a href="posts.html " class="nav-link active">Posts<a/></li>
+        <li class="nav-item px-2"><a href="posts.html " class="nav-link">Posts<a/></li>
         <li class="nav-item px-2"><a href="categories.html" class="nav-link">Categories<a/></li>
-        <li class="nav-item px-2"><a href="users.html" class="nav-link">Users<a/></li>
+        <li class="nav-item px-2"><a href="users.html" class="nav-link active">Users<a/></li>
       </ul>
       <!--..................... dropdown................ -->
       <ul class="navbar-nav ml-auto">
@@ -52,11 +52,11 @@
 </nav>
 
 <!--...................header..................  -->
-<header id="main-header" class="mt-4 py-2 bg-primary text-white">
+<header id="main-header" class="mt-4 py-2 bg-warning text-white">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-            <h1><i class="fa fa-pencil"></i> Posts</h1>
+            <h1><i class="fa fa-pencil"></i> Users</h1>
       </div>
     </div>
   </div>
@@ -69,7 +69,7 @@
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Search">
           <span class="input-group-btn">
-            <button type="button" class="btn btn-primary"name="button">Search</button>
+            <button type="button" class="btn btn-warning"name="button">Search</button>
           </span>
         </div>
       </div>
@@ -77,68 +77,46 @@
   </div>
 </section>
 
-
-<!-- ...posts..... -->
+<!-- ...users..... -->
 <section id="posts">
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="card mt-4">
           <div class="card-header">
-            <h4>Latest Posts</h4>
+            <h4>Latest Categories</h4>
           </div>
           <table class="table table-striped">
             <thead class="thead-inverse">
               <tr>
                 <th>#</th>
-                <th>Title</th>
-                <th>Category</th>
-                <th>Data Posted</th>
+                <th>font-awesome</th>
+                <th>Eamil</th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td scope="row">1</td>
-                <td>Postone</td>
-                <td>Web development</td>
-                <td>July 12, 2017</td>
+                <td>John doe</td>
+                <td>john@email.com</td>
                 <td><a href="details.html" class="btn btn-secondary">
                   <i class="fa fa-angle-double-right"></i> Details
                 </a></td>
               </tr>
               <tr>
                 <td scope="row">2</td>
-                <td>Post Two</td>
-                <td>Ux design</td>
-                <td>July 12, 2017</td>
+
+                <td>Mikel</td>
+                <td>Mikel@email.com</td>
                 <td><a href="details.html" class="btn btn-secondary">
                   <i class="fa fa-angle-double-right"></i> Details
                 </a></td>
               </tr>
               <tr>
                 <td scope="row">3</td>
-                <td>POst Three</td>
-                <td>User Interface design</td>
-                <td>July 12, 2017</td>
-                <td><a href="details.html" class="btn btn-secondary">
-                  <i class="fa fa-angle-double-right"></i> Details
-                </a></td>
-              </tr>
-              <tr>
-                <td scope="row">4</td>
-                <td>Post Four</td>
-                <td>Web development</td>
-                <td>July 12, 2017</td>
-                <td><a href="details.html" class="btn btn-secondary">
-                  <i class="fa fa-angle-double-right"></i> Details
-                </a></td>
-              </tr>
-              <tr>
-                <td scope="row">5</td>
-                <td>Post Five</td>
-                <td>Health and Wellness</td>
-                <td>July 12, 2017</td>
+                <td>Kristen</td>
+                <td>Kristen@email.com</td>
                 <td><a href="details.html" class="btn btn-secondary">
                   <i class="fa fa-angle-double-right"></i> Details
                 </a></td>
@@ -164,16 +142,11 @@
 
 
 
-
-
-
-
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <!-- smooth scrolling from navbar to the id element.....navbar-fixed.js......... -->
   <!-- jquery-plugin-fixed bootstrap4 nav-smooth-scroll navbar -->
   <script src="js/navbar-fixed.js"></script>
-
 </body>
 </html>
