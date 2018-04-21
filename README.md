@@ -24,7 +24,4 @@ npm start
 
 # Live Application
 
-```
-
-Live Application>> [BlogThemeLive](https://krkchaitanya.github.io/Blog_Theme).
-```
+Find the application live >> [BlogThemeLive](https://krkchaitanya.github.io/Blog_Theme).
