@@ -26,5 +26,5 @@ npm start
 
 ```
 
-Live Application>> [BlogThemeLive](https://github.com/angular/angular-cli).
+Live Application>> [BlogThemeLive](https://krkchaitanya.github.io/Blog_Theme).
 ```
